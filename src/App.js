@@ -58,7 +58,7 @@ function App() {
   };
 
   const onSelectLetter = (key) => {
-    if (currAttempt.letter > 5) return;
+    if (currAttempt.letter >= 5) return;
     const newBoard = [...board];
     newBoard[currAttempt.attempt][currAttempt.letter] = key;
     setBoard(newBoard);
