@@ -43,7 +43,7 @@ function App() {
       return;
     }
     console.log(currAttempt);
-    if (currAttempt.attempt === 5) {
+    if (currAttempt.attempt >= 5) {
       setGameOver({ gameOver: true, guessedWord: false });
       return;
     }
